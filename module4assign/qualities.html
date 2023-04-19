@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Being an Effective Leader</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+	  
+
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">LTEC 5420</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       Menu <span class="navbar-toggler-icon"></span>
+       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item active">
+				 <a class="nav-link" href="qualities.html">Qualities</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="styles.html">Styles</a>
+			</li>
+              <li class="nav-item active">
+				<a class="nav-link" href="success.html">Leading a Tem to Success&nbsp;&nbsp;</a>
+			</li>     
+            <li class="nav-item active">
+				<a class="nav-link" href="advice.html">Advice</a>
+			</li>
+        </ul>
+</div>
+  </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+       <h1 class="display-4">Qualities &amp; Traits of Being an Effective Leader&nbsp;&nbsp;</h1>
+       <p class="lead col-xl-10 offset-xl-1">Being an Effective Leader</p>
+  </div>
+       <br>
+       <hr>
+       <br>
+       <div class="row">
+          <div class="col-md-4 col-xl-5">
+            <h2><strong>10 Leadership Traits</strong> </h2>
+            <ol>
+			  <li>Accountability</li>
+			  <li>Adaptability</li>
+				<li> Confidence</li>
+				<li> Creativity</li>
+				<li>Empathy</li>
+				<li> Focus</li>
+				<li>Positivity</li>
+				<li>Risk-Taking</li>
+				<li>Stability</li>
+				<li>Team-Building</li>
+			  </ol>
+         </div>
+          <div class="col-md-4 col-xl-6">
+             <div class="card">
+                <div class="card-body">
+                   <h5 class="card-title">Qualities of a Leader</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Effective leadership has a lot to do with inspiring, aligning and then activating -- but it doesn't end there.</h6>
+					
+					<ul id="tabs">
+      <li><a href="#tab1">Self-Awareness</a></li>
+      <li><a href="#tab2">Relationships&nbsp;</a></li>
+      <li><a href="#tab3">Empower</a></li>
+     
+</ul>
+<div class="container" id="tab1">
+    One of the most important qualities of a good leader is self-awareness. The leader needs to be constantly aware of how they are acting, what they are saying and what message their nonverbal communication is sending. Although they may not always realize it, team members constantly observe leaders and model their actions and reactions by how they see the leader react. This is especially important in times of change or extreme stress. Employees will look to the leader for formal and informal guidance on how to react to the change or stress and consciously or unconsciously react in the same way. Think about how you respond in situations of unexpected change or stress. Is this the way you want to respond?
+</div>
+<div class="container" id="tab2">
+    Early management researchers assumed that the most important element of the workplace was the work itself. They conducted studies and developed systems meant to increase employee productivity but did little to address the human elements of employees. Contemporary leadership theories take a more holistic approach to the workplace and include the human elements of employees, including their need to form relationships with team members. As human beings, employees are not able to bring only the part of them that does the work to their organizations. They bring their entire selves which is why leaders need to be excellent relationship builders in all areas of the organization. Think about your current workplace relationships. Who else can you connect with?
+</div>
+<div class="container" id="tab3">
+    A leader who empowers others unleashes their ability to act on behalf of their area of work or expertise and provides them with an opportunity to grow and improve. When a leader empowers a team member, they give them a set of guidelines to work in and then leave them alone to do their work. For example, you may have had the experience of speaking with the customer service department of a store about a purchase you were unsatisfied with. When the customer service agent can give you a refund or discount on a future purchase without first checking with their manager, they have been empowered in their role. Who are you empowering, either in or outside of work? Who can make some decisions without checking with you first?
+</div>
+</div>
+			   <script  src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#tabs li a:not(:first)').addClass('inactive');
+$('.container:not(:first)').hide();
+});
+	$('#tabs li a').click(function(){
+    var t = $(this).attr('href');
+    $('#tabs li a').addClass('inactive');
+    $(this).removeClass('inactive');
+    $('.container').hide();
+    $(t).fadeIn('slow');
+    return false;
+})
+	if($(this).hasClass('inactive')){ //this is the start of our condition
+    $('#tabs li a').addClass('inactive');
+    $(this).removeClass('inactive');
+    $('.container').hide();
+    $(t).fadeIn('slow');
+}
+</script>
+            </div>
+	     </div>
+  </div>
+          <div class="col-md-4 col-xl-12">
+            <div class="card">
+			   <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <iframe  src="https://www.youtube.com/embed/lmyZMtPVodo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p style="text-align: center">Video courtesy of <a href="https://www.youtube.com/watch?v=lmyZMtPVodo" target="_blank"> TED</a>.</p>
+            </div>
+          </div>
+  <br/>
+	  <br/>
+	  	
+       <br/>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>Footer </h4>
+             <p>Copyright &copy; 2022 &middot; All Rights Reserved &middot; <a href="../index.html" >My Website</a></p>
+          </div>
+       </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="../js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
